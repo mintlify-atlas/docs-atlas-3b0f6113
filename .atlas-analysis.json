@@ -1,0 +1,195 @@
+{
+  "projectType": "ai-ml",
+  "projectName": "WiFi DensePose",
+  "projectDescription": "WiFi-based dense human pose estimation system using CSI data and advanced machine learning for real-time, privacy-preserving pose detection",
+  "theme": "aspen",
+  "primaryColor": "#0EA5E9",
+  "lightColor": "#38BDF8",
+  "darkColor": "#0284C7",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation",
+              "hardware-setup"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/how-it-works",
+              "concepts/csi-technology",
+              "concepts/architecture",
+              "concepts/privacy-security"
+            ]
+          },
+          {
+            "group": "Python SDK (v1)",
+            "pages": [
+              "python/overview",
+              "python/api-client",
+              "python/configuration",
+              "python/examples"
+            ]
+          },
+          {
+            "group": "Rust Implementation (v2)",
+            "pages": [
+              "rust/overview",
+              "rust/performance",
+              "rust/crates",
+              "rust/wasm-browser"
+            ]
+          },
+          {
+            "group": "Hardware",
+            "pages": [
+              "hardware/supported-devices",
+              "hardware/esp32-mesh",
+              "hardware/intel-csi",
+              "hardware/calibration"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/kubernetes",
+              "deployment/production",
+              "deployment/monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "REST API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/pose-estimation",
+              "api/analytics",
+              "api/system"
+            ]
+          },
+          {
+            "group": "WebSocket API",
+            "pages": [
+              "api/websocket/streaming",
+              "api/websocket/events"
+            ]
+          },
+          {
+            "group": "CLI Reference",
+            "pages": [
+              "cli/commands",
+              "cli/configuration",
+              "cli/database",
+              "cli/tasks"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Specialized Modules",
+        "groups": [
+          {
+            "group": "WiFi-Mat (Disaster Response)",
+            "pages": [
+              "wifi-mat/overview",
+              "wifi-mat/triage-system",
+              "wifi-mat/deployment",
+              "wifi-mat/use-cases"
+            ]
+          },
+          {
+            "group": "Signal Processing",
+            "pages": [
+              "signal/algorithms",
+              "signal/fresnel-zone",
+              "signal/doppler-extraction",
+              "signal/subcarrier-selection"
+            ]
+          },
+          {
+            "group": "Training & Models",
+            "pages": [
+              "training/overview",
+              "training/datasets",
+              "training/densepose-model",
+              "training/evaluation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Use Cases",
+            "pages": [
+              "guides/healthcare",
+              "guides/fitness",
+              "guides/smart-home",
+              "guides/security"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "guides/multi-person-tracking",
+              "guides/fall-detection",
+              "guides/activity-recognition",
+              "guides/performance-tuning"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "guides/contributing",
+              "guides/testing",
+              "guides/troubleshooting",
+              "guides/benchmarking"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Privacy-first WiFi-based pose estimation using CSI data",
+    "Real-time processing with sub-50ms latency at 30 FPS",
+    "Rust implementation with 810x speedup over Python",
+    "Multi-person tracking (up to 10 simultaneous individuals)",
+    "ESP32-S3 hardware mesh support for commodity sensing",
+    "WiFi-Mat disaster response module with START triage",
+    "SOTA signal processing algorithms (Hampel, Fresnel, BVP)",
+    "REST API and WebSocket streaming",
+    "Domain-specific optimizations (healthcare, fitness, smart home)",
+    "100% test coverage with comprehensive benchmarks"
+  ],
+  "publicApiSurface": [
+    "GET /api/v1/pose/latest - Get latest pose data",
+    "GET /api/v1/pose/history - Get historical pose data",
+    "GET /api/v1/analytics/summary - Analytics dashboard data",
+    "POST /api/v1/system/calibrate - Calibrate environment",
+    "ws://*/ws/pose/stream - Real-time pose streaming",
+    "wifi-densepose start - Start API server",
+    "wifi-densepose config - Configuration management",
+    "wifi-densepose-signal - Rust signal processing crate",
+    "wifi-densepose-nn - Neural network inference crate",
+    "wifi-densepose-mat - Disaster response crate",
+    "wifi-densepose-hardware - Hardware interface crate",
+    "WiFiDensePose (Python class) - Main Python SDK",
+    "Esp32CsiParser - ESP32 CSI frame parser",
+    "DisasterResponse - WiFi-Mat API"
+  ]
+}
